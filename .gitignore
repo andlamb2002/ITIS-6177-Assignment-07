@@ -1,0 +1,28 @@
+# Node.js dependencies
+node_modules/
+package-lock.json
+
+# System and config directories
+.cache/
+.config/
+.dotnet/
+.npm/
+.ssh/
+.pm2/
+.vscode-server/
+
+# Shell and history files
+.bash_history
+.bash_logout
+.bash_profile
+.bashrc
+.lesshst
+.mysql_history
+.tshrc
+
+# Database and SQL-related files 
+db.sql
+
+# Azure & deployment files 
+.azure/
+*.publishsettings
