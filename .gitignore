@@ -1,8 +1,7 @@
-# Node.js dependencies
 node_modules/
 package-lock.json
+.azure/
 
-# System and config directories
 .cache/
 .config/
 .dotnet/
@@ -11,7 +10,6 @@ package-lock.json
 .pm2/
 .vscode-server/
 
-# Shell and history files
 .bash_history
 .bash_logout
 .bash_profile
@@ -20,9 +18,4 @@ package-lock.json
 .mysql_history
 .tshrc
 
-# Database and SQL-related files 
 db.sql
-
-# Azure & deployment files 
-.azure/
-*.publishsettings
