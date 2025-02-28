@@ -5,13 +5,13 @@ const port = 3001;
 
 const FUNCTION_URL = "https://assingment-07-function.azurewebsites.net/api/sayFunction";
 
-app.get('/say', async (req, res) => {
+app.get('/say', async (req, res) => { // Route to call Azure Say Function
     const keyword = req.query.keyword || "";
     try {
         const response = await axios.get(`${FUNCTION_URL}?keyword=${keyword}`);
         res.json(response.data);
     } catch (error) {
-        console.error("Error calling Azure Function:", error);
+        console.error("Error calling Azure Say Function:", error);
         res.status(500).json({ error: "Failed to fetch response from Azure Function" });
     }
 });
